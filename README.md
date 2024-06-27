@@ -119,3 +119,31 @@ interface iAccountContext {
 	contractsByChain: ContractInfo[];
 }
 ```
+
+## DevTools
+
+To ease up development, we also provide a development widget which can serve as
+
+- Wallet
+- Contract Management and interaction similar to Remix
+- Code generation
+- Resizable, collapsable, dark and light mode
+
+```javascript
+import React from "react";
+import { AccountProvider, WalletDevTool } from "wallet-sdk-react";
+
+const App = () => {
+	return (
+		<AccountProvider>
+			<MyComponent />
+			{/* Just insert  WalletDevTool anywhere inside AccountProvider */}
+			<WalletDevTool />
+		</AccountProvider>
+	);
+};
+```
+
+![screenshot1!](assets/devtool1.png)
+![screenshot2!](assets/devtool2.png)
+![screenshot3!](assets/devtool3.png)

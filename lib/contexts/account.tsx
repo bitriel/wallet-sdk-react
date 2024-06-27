@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/ban-types */
 import { createContext, useMemo, useState } from "react";
-import { WalletSDK, ContractInfo, chainList } from "core-sdk";
+import { WalletSDK, ContractInfo, chainList } from "wallet-sdk";
 import { useLocalStorage } from "usehooks-ts";
 
-export const WalletContext = createContext<iWalletContext>({
+export const AccountContext = createContext<iAccountContext>({
 	account: null,
 	chain: null,
 	contractsByChain: [],
@@ -85,7 +85,7 @@ export const AccountProvider: React.FC<Props> = ({ children }) => {
 	// }, [account]);
 
 	return (
-		<WalletContext.Provider
+		<AccountContext.Provider
 			value={{
 				account,
 				switchChain,
@@ -101,7 +101,7 @@ export const AccountProvider: React.FC<Props> = ({ children }) => {
 			}}
 		>
 			{children}
-		</WalletContext.Provider>
+		</AccountContext.Provider>
 	);
 };
 
@@ -116,7 +116,7 @@ export interface Chain {
 	logo: string;
 }
 
-export interface iWalletContext {
+export interface iAccountContext {
 	account: ReturnType<typeof WalletSDK> | null;
 	switchChain?: Function;
 	switchWallet?: Function;

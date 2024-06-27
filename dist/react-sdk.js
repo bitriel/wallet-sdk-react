@@ -73265,8 +73265,8 @@ function Wne({ defaultOpen: a = !0 }) {
   return /* @__PURE__ */ _e(tZ, { children: /* @__PURE__ */ _e(Y$, { children: /* @__PURE__ */ _e(G$, { defaultOpen: a, children: /* @__PURE__ */ _e(eX, { children: /* @__PURE__ */ _e(wZ, { children: /* @__PURE__ */ _e(IZ, { children: /* @__PURE__ */ _e(Une, {}) }) }) }) }) }) });
 }
 export {
+  P8 as AccountContext,
   Qne as AccountProvider,
-  P8 as WalletContext,
   Wne as WalletDevTool,
   vE as useAccount
 };

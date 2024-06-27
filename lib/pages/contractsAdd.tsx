@@ -3,8 +3,8 @@ import { useAccount } from "../hooks/account";
 import { ethers, isAddress } from "ethers";
 import { cn } from "../utils/cn";
 import ABIUploader from "../components/ABIUploader";
-import { ContractInfo } from "core-sdk";
-import { GENERIC_ABI } from "core-sdk";
+import { ContractInfo } from "wallet-sdk";
+import { GENERIC_ABI } from "wallet-sdk";
 import { useNavigate } from "react-router-dom";
 
 // import ContractInteraction from "../components/ContractInteraction";

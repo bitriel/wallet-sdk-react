@@ -1,6 +1,6 @@
-import { WalletSDK, ContractInfo } from 'core-sdk';
+import { WalletSDK, ContractInfo } from 'wallet-sdk';
 
-export declare const WalletContext: import('react').Context<iWalletContext>;
+export declare const AccountContext: import('react').Context<iAccountContext>;
 export declare const AccountProvider: React.FC<Props>;
 interface Props {
     children: React.ReactNode;
@@ -11,7 +11,7 @@ export interface Chain {
     symbol: string;
     logo: string;
 }
-export interface iWalletContext {
+export interface iAccountContext {
     account: ReturnType<typeof WalletSDK> | null;
     switchChain?: Function;
     switchWallet?: Function;

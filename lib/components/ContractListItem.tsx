@@ -1,7 +1,7 @@
 import { Contract } from "ethers";
 import { useEffect, useState } from "react";
 import { useAccount } from "../hooks/account";
-import { ContractInfo, prettyBalance } from "core-sdk";
+import { ContractInfo, prettyBalance } from "wallet-sdk";
 import { useNavigate } from "react-router-dom";
 
 export default function ContractListItem({

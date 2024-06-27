@@ -1,5 +1,5 @@
 import { Contract } from 'ethers';
-import { ContractInfo } from 'core-sdk';
+import { ContractInfo } from 'wallet-sdk';
 
 export default function ContractListItem({ contract, info, }: {
     contract: Contract;

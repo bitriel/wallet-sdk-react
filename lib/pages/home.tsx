@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAccount } from "../hooks/account";
-import { prettyBalance } from "core-sdk";
+import { prettyBalance } from "wallet-sdk";
 import ContractListItem from "../components/ContractListItem";
 
 export default function Home() {

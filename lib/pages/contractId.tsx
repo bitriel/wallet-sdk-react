@@ -3,7 +3,7 @@ import { useAccount } from "../hooks/account";
 import { useEffect, useMemo } from "react";
 // import ContractInteraction from "../components/ContractInteraction";
 import ContractInteraction from "../components/ContractInteraction";
-import { shortenEthAddress } from "core-sdk";
+import { shortenEthAddress } from "wallet-sdk";
 import { LuTrash2 } from "react-icons/lu";
 import { LuPencil } from "react-icons/lu";
 

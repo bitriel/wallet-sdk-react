@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { WalletContext } from "../contexts/account";
+import { AccountContext } from "../contexts/account";
 
 export const useAccount = () => {
-	const context = useContext(WalletContext);
+	const context = useContext(AccountContext);
 
 	if (!context) {
 		throw new Error("useAccount must be used within an AccountProvider");

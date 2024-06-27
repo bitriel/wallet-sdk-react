@@ -1,1 +1,1 @@
-export declare const useAccount: () => import('../contexts/account').iWalletContext;
+export declare const useAccount: () => import('../contexts/account').iAccountContext;

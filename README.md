@@ -4,6 +4,13 @@
 
 This library provides a React context and provider to easily manage blockchain wallets, contracts, and chain information using the WalletSDK core library. It simplifies the integration of blockchain functionality into React applications.
 
+## Features
+
+- Wallet Management: Manage wallet state and mnemonic phrases.
+- Chain Management: Easily switch between different blockchain networks.
+- Contract Management: Load, add, remove, and edit contracts.
+- Context Integration: Utilize React context for state management and easy access across components.
+
 ## Installation
 
 To use the WalletSDK for React, install the necessary dependencies:
@@ -59,19 +66,10 @@ const MyComponent = () => {
 };
 ```
 
-## AccountContext
+## AccountContext Interfaces
 
 The AccountContext and AccountProvider are used to manage and provide wallet-related state and functions throughout your React application.
 This context expose the following features and interfaces:
-
-### Features
-
-- Wallet Management: Manage wallet state and mnemonic phrases.
-- Chain Management: Easily switch between different blockchain networks.
-- Contract Management: Load, add, remove, and edit contracts.
-- Context Integration: Utilize React context for state management and easy access across components.
-
-### Interfaces
 
 ```typescript
 type ContractInfo = {

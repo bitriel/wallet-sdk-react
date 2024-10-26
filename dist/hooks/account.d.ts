@@ -1,1 +1,1 @@
-export declare const useAccount: () => import('../contexts/account').iAccountContext;
+export declare const useAccount: () => import('..').iAccountContext;

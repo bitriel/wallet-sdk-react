@@ -19,7 +19,7 @@ export const AccountProvider: React.FC<Props> = ({ children }) => {
 	const [chains] = useLocalStorage<Chain[]>("chains", chainList);
 	const [chain, setChain] = useLocalStorage<string | null>(
 		"chain",
-		"https://rpc0.selendra.org"
+		"https://rpc.selendra.org"
 	);
 	const [contracts, setContracts] = useLocalStorage<ContractInfo[]>(
 		"contracts",

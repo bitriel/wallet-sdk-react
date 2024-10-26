@@ -16032,7 +16032,7 @@ const P8 = uR({
     "bean annual beach exotic round prepare certain tuna planet enlist unknown latin innocent umbrella liberty address trouble scorpion panel plastic swift then mad glide"
   ), [i] = JS("chains", GK), [s, u] = JS(
     "chain",
-    "https://rpc0.selendra.org"
+    "https://rpc.selendra.org"
   ), [d, _] = JS(
     "contracts",
     []
